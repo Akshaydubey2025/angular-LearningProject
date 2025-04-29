@@ -1,0 +1,116 @@
+<!-- <p-table
+  [value]="staffSkillset"
+  responsiveLayout="scroll"
+  scrollable="true"
+  scrollHeight="400px"
+  class="p-datatable-sm"
+>
+  <ng-template pTemplate="header">
+    <tr>
+      <th pSortableColumn="team">Team<p-sortIcon field="team"></p-sortIcon></th>
+      <th pSortableColumn="officer">
+        Officer<p-sortIcon field="officer"></p-sortIcon>
+      </th>
+      <th pSortableColumn="role">Role<p-sortIcon field="role"></p-sortIcon></th>
+      <th pSortableColumn="Skill001">Skill001<p-sortIcon field="Skill001"></p-sortIcon></th>
+      <th pSortableColumn="skill002">Skill002 <p-sortIcon field="skill002"></p-sortIcon></th>
+      <th pSortableColumn="skill003">Skill003 <p-sortIcon field="skill003"></p-sortIcon></th>
+      <th pSortableColumn="Skill004">Skill004 <p-sortIcon field="Skill004"></p-sortIcon></th>
+      <th pSortableColumn="Skill005">Skill005 <p-sortIcon field="Skill005"></p-sortIcon></th>
+      <th pSortableColumn="Skill006">Skill006 <p-sortIcon field="Skill006"></p-sortIcon></th>
+    </tr>
+  </ng-template>
+
+  <ng-template pTemplate="body" let-staff>
+    <tr>
+      <td>{{ staff.team }}</td>
+      <td>{{ staff.officer }}</td>
+      <td>{{ staff.role }}</td>
+      <td>
+        <ng-container *ngIf="staff.skill001">
+          <CheckIcon />
+        </ng-container>
+      </td>
+      <td>
+        <ng-container *ngIf="staff.skill002">
+          <CheckIcon />
+        </ng-container>
+      </td>
+      <td>
+        <ng-container *ngIf="staff.skill003">
+          <CheckIcon />
+        </ng-container>
+      </td>
+      <td>
+        <ng-container *ngIf="staff.skill004">
+          <CheckIcon />
+        </ng-container>
+      </td>
+      <td>
+        <ng-container *ngIf="staff.skill005">
+          <CheckIcon />
+        </ng-container>
+      </td>
+      <td>
+        <ng-container *ngIf="staff.skill006">
+          <CheckIcon />
+        </ng-container>
+      </td>
+    </tr>
+  </ng-template>
+</p-table> -->
+<!-- <table border="1" cellspacing="0" cellpadding="5">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Employee Name</th>
+        <th>Salary</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of data">
+        <td>{{ emp.id }}</td>
+        <td>{{ emp.employee_name }}</td>
+        <td>{{ emp.employee_salary }}</td>
+        <td>{{ emp.employee_age }}</td>
+      </tr>
+    </tbody>
+  </table> -->
+  <p-table
+  [value]="data"
+  responsiveLayout="scroll"
+  scrollable="true"
+  scrollHeight="400px"
+  class="p-datatable-sm"
+  class="custom-table"
+>
+  <ng-template pTemplate="header">
+    <tr>
+      <th pSortableColumn="id">
+        <span>ID</span
+        ><p-sortIcon field="id" style="margin-left: 8px"></p-sortIcon>
+      </th>
+      <th pSortableColumn="name">
+        <span>Name</span
+        ><p-sortIcon field="name" style="margin-left: 8px"></p-sortIcon>
+      </th>
+      <th pSortableColumn="salary">
+        <span>Salary</span
+        ><p-sortIcon field="salary" style="margin-left: 8px"></p-sortIcon>
+      </th>
+      <th pSortableColumn="age">
+        <span>Age</span
+        ><p-sortIcon field="age" style="margin-left: 8px"></p-sortIcon>
+      </th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-staff>
+    <tr>
+      <td>{{ staff.id }}</td>
+      <td>{{ staff.employee_name }}</td>
+      <td>{{ staff.employee_salary }}</td>
+      <td>{{ staff.employee_age }}</td>
+    </tr>
+  </ng-template>
+</p-table>
