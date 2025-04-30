@@ -81,7 +81,7 @@
   [value]="data"
   responsiveLayout="scroll"
   scrollable="true"
-  scrollHeight="400px"
+  scrollHeight="100vh - 300px"
   class="p-datatable-sm"
   class="custom-table"
 >
@@ -91,17 +91,17 @@
         <span>ID</span
         ><p-sortIcon field="id" style="margin-left: 8px"></p-sortIcon>
       </th>
-      <th pSortableColumn="name">
+      <th pSortableColumn="employee_name">
         <span>Name</span
-        ><p-sortIcon field="name" style="margin-left: 8px"></p-sortIcon>
+        ><p-sortIcon field="employee_name" style="margin-left: 8px"></p-sortIcon>
       </th>
-      <th pSortableColumn="salary">
+      <th pSortableColumn="employee_salary">
         <span>Salary</span
-        ><p-sortIcon field="salary" style="margin-left: 8px"></p-sortIcon>
+        ><p-sortIcon field="employee_salary" style="margin-left: 8px"></p-sortIcon>
       </th>
-      <th pSortableColumn="age">
+      <th pSortableColumn="employee_age">
         <span>Age</span
-        ><p-sortIcon field="age" style="margin-left: 8px"></p-sortIcon>
+        ><p-sortIcon field="employee_age" style="margin-left: 8px"></p-sortIcon>
       </th>
     </tr>
   </ng-template>
