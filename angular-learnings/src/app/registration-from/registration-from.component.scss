@@ -39,11 +39,12 @@
 //   }
 .custom-form {
   width: 40vw;
-  margin: 0 auto;
+  margin: 50px auto;
   height: 80vh;
   padding: 2rem;
-  border: 1px solid black;
-  border-radius: 10px;
+  border: 1px solid rgb(227, 219, 219);
+  border-radius: 10px; 
+
 }
 
 .p-inputgroup {
@@ -74,7 +75,7 @@
   height: 5vh;
   background-color: #007ad9;
   border: none;
-  font-weight: bold;
+  font-weight: 400;
   margin-top: 0.5rem;
   border-radius: 6px;
   color: white;
@@ -105,4 +106,16 @@
 input{
   height: 100%;
   width: 90%;
+  padding-left: 10px;
+  border: 1px solid rgb(227, 219, 219);
+  
+}
+
+input::placeholder {
+  color: gray;
+  opacity: 0.7;
+  padding-left: 10px;
+}
+img{
+  margin-bottom: 20px;
 }
