@@ -44,7 +44,7 @@ export class RegistrationFromComponent {
     if (this.registrationForm.valid) {
       localStorage.setItem('user', JSON.stringify(this.registrationForm.value));
       alert('Username saved to local storage!');
-      this.router.navigate(['login']);
+      this.router.navigate(['table']);
 
     }
   }

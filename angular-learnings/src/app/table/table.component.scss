@@ -1,3 +1,7 @@
+/* Targeting the internal wrapper */
+
+
+
 ::ng-deep .p-datatable {
     font-size: 14px;
     color: white;
@@ -25,7 +29,10 @@
   :host ::ng-deep .p-datatable .p-datatable-tbody > tr > td,
   :host ::ng-deep .p-datatable .p-datatable-thead > tr > th {
     padding: 1rem 0.5rem; /* 1rem top-bottom, 0.5rem left-right */
+
   }
-  
+  ::ng-deep .custom-dark-table .p-datatable-table {
+    min-width: 1400px;
+  }
   
   

@@ -77,40 +77,52 @@
       </tr>
     </tbody>
   </table> -->
+
+
   <p-table
-  [value]="data"
-  responsiveLayout="scroll"
-  scrollable="true"
-  scrollHeight="100vh - 300px"
-  class="p-datatable-sm"
-  class="custom-table"
->
-  <ng-template pTemplate="header">
-    <tr>
-      <th pSortableColumn="id">
-        <span>ID</span
-        ><p-sortIcon field="id" style="margin-left: 8px"></p-sortIcon>
-      </th>
-      <th pSortableColumn="employee_name">
-        <span>Name</span
-        ><p-sortIcon field="employee_name" style="margin-left: 8px"></p-sortIcon>
-      </th>
-      <th pSortableColumn="employee_salary">
-        <span>Salary</span
-        ><p-sortIcon field="employee_salary" style="margin-left: 8px"></p-sortIcon>
-      </th>
-      <th pSortableColumn="employee_age">
-        <span>Age</span
-        ><p-sortIcon field="employee_age" style="margin-left: 8px"></p-sortIcon>
-      </th>
-    </tr>
-  </ng-template>
-  <ng-template pTemplate="body" let-staff>
-    <tr>
-      <td>{{ staff.id }}</td>
-      <td>{{ staff.employee_name }}</td>
-      <td>{{ staff.employee_salary }}</td>
-      <td>{{ staff.employee_age }}</td>
-    </tr>
-  </ng-template>
-</p-table>
+    [value]="data"
+    [scrollable]="true"
+    scrollHeight="400px"
+    [resizableColumns]="true"
+    styleClass="p-datatable-gridlines"
+    [tableStyle]="{ 'min-width': '50rem' }"
+  >
+    <ng-template pTemplate="header">
+      <tr>
+        <th pSortableColumn="id">
+          <span>ID</span
+          ><p-sortIcon field="id" style="margin-left: 8px"></p-sortIcon>
+        </th>
+        <th pSortableColumn="employee_name">
+          <span>Name</span
+          ><p-sortIcon
+            field="employee_name"
+            style="margin-left: 8px"
+          ></p-sortIcon>
+        </th>
+        <th pSortableColumn="employee_salary">
+          <span>Salary</span
+          ><p-sortIcon
+            field="employee_salary"
+            style="margin-left: 8px"
+          ></p-sortIcon>
+        </th>
+        <th pSortableColumn="employee_age">
+          <span>Age</span
+          ><p-sortIcon
+            field="employee_age"
+            style="margin-left: 8px"
+          ></p-sortIcon>
+        </th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-staff>
+      <tr>
+        <td>{{ staff.id }}</td>
+        <td>{{ staff.employee_name }}</td>
+        <td>{{ staff.employee_salary }}</td>
+        <td>{{ staff.employee_age }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+
